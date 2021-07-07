@@ -1,5 +1,9 @@
 var currentIdol = ''
 
+window.onload = function() {
+    $('#liveToast').toast('show')
+};
+
 $(document).ready(function(){
     var url = location.href;
     if (url.indexOf('?') != -1) {
@@ -80,6 +84,7 @@ function setTimelineItemVisibility(fromMembers) {
             this.className = ''
         }
     });
+    $('#liveToast').toast('hide')
     return filterWord
 }
 
