@@ -1,4 +1,4 @@
-member_group = ['all','daisy','captain','leader','akb48tw','tpeone','formal','sskr','the-puzzle5','tp-chipmunk','wrd48','mini-four','keeler','soba-star','trainee','ttptwo','metro','bellflower','101girl','sakura','rest']
+member_group = ['all','daisy','captain','leader','akb48tw','tpeone','formal','sskr','the-puzzle5','tp-chipmunk','wrd48','mini-four','ghost-family','keeler','soba-star','trainee','ttptwo','metro','bellflower','101girl','sakura','rest']
 lastUnit = 'ttp'
 
 $(document).ready(function(){
