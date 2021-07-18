@@ -1,4 +1,4 @@
-member_group = ['all','daisy','captain','leader','akb48tw','tpeone','formal','sskr','the-puzzle5','tp-chipmunk','wrd48','mini-four','ghost-family','keeler','soba-star','trainee','ttptwo','metro','bellflower','101girl','sakura','rest']
+member_group = ['all','daisy','captain','leader','akb48tw','tpeone','formal','sskr','the-puzzle5','tp-chipmunk','wrd48','mini-four','ghost-family','keeler','soba-star','trainee','ttptwo','metro','bellflower','101girl','sakura','rest','000']
 lastUnit = 'ttp'
 
 $(document).ready(function(){
@@ -91,6 +91,14 @@ function filterTimeline(filterWord) {
     var new_url = 'index.html?q=' + filterWord;
     if (filterWord == '' || filterWord == '所有內容') {
         new_url = 'index.html'
+    }
+    window.location.href = new_url
+}
+
+function filterTimelineIndividual(filterWord) {
+    var new_url = 'individual.html?q=' + filterWord;
+    if (filterWord == '' || filterWord == '所有內容') {
+        new_url = 'individual.html'
     }
     window.location.href = new_url
 }

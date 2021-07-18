@@ -52,6 +52,7 @@
             <img width="17rem" height="17rem" left src="images/filter.png" alt="資料過濾器"></img>
           </div>
           <h6 class="float-right" style="margin-top: 0.65rem; margin-right: 0.4rem;">[<a href="members.html" style="color: rgb(32, 37, 41); text-decoration: underline;">成員名單</a>]</h6>
+          <h6 class="float-right" style="margin-top: 0.65rem; margin-right: 0.4rem;">[<a href="individual.html" style="color: rgb(32, 37, 41); text-decoration: underline;">個人動態</a>]</h6>
           <ul class="timeline">
             <li>
   <div style="display: inline-flex; margin-bottom: 0.25rem;">
@@ -4762,7 +4763,7 @@
   <div style="display: inline-flex; margin-bottom: 0.25rem;">
     <a href="content/4cbb07d48d34da2fcb6799aa7c1e403d.html" style="color:black;">
       <u>2020-10-18</u>
-      <img class="list-social" width="23rem" height="23rem" left src="images/YT.png" alt="YouTube"></img>
+      <img class="list-social" width="23rem" height="23rem" left src="images/IG.png" alt="Instagram"></img>
     </a>
   </div>
   
@@ -8612,7 +8613,7 @@
   <div>
     <span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">生活</span>
 		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">vlog</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-light" style="cursor: pointer;">吃播</span>
+		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">吃播</span>
   </div>
 </li>
 <li>
@@ -15677,7 +15678,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -15697,7 +15699,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
