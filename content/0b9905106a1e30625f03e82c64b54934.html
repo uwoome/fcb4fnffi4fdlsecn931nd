@@ -54,16 +54,16 @@
             來自&nbsp;<a href="https://www.facebook.com/AKB48TeamTP" target="_blank"><u>AKB48 Team TP @Facebook</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">校園</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">演出</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-warning" style="cursor: pointer;">校唱</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">sakura</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">新竹</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">元培科大</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-warning" style="cursor: pointer;">迎新</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">嗚吼嗚吼吼</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">看見夕陽了嗎</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">ttp festival</span>
+            <span class="badge badge-dark b_f">校園</span>
+		<span class="badge badge-primary b_f">演出</span>
+		<span class="badge badge-warning b_f">校唱</span>
+		<span class="badge badge-dark b_f">sakura</span>
+		<span class="badge badge-dark b_f">新竹</span>
+		<span class="badge badge-info b_f">元培科大</span>
+		<span class="badge badge-warning b_f">迎新</span>
+		<span class="badge badge-secondary b_f">嗚吼嗚吼吼</span>
+		<span class="badge badge-secondary b_f">看見夕陽了嗎</span>
+		<span class="badge badge-secondary b_f">ttp festival</span>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">曾詩羽</span>, <span onclick="onIdol(this.innerText)">劉曉晴</span>, <span onclick="onIdol(this.innerText)">林于馨</span>, <span onclick="onIdol(this.innerText)">張羽翎</span>, <span onclick="onIdol(this.innerText)">周佳郁</span>, <span onclick="onIdol(this.innerText)">鄭佳郁</span>
+            <span class="m_f">曾詩羽</span>, <span class="m_f">劉曉晴</span>, <span class="m_f">林于馨</span>, <span class="m_f">張羽翎</span>, <span class="m_f">周佳郁</span>, <span class="m_f">鄭佳郁</span>
           </div>
         </div>
       </div>
@@ -120,7 +120,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -140,7 +141,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

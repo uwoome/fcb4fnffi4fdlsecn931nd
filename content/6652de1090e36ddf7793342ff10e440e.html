@@ -54,17 +54,17 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UCajEDiZYhD_9NbFA3nqFYjw" target="_blank"><u>AKB48 Team TP @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">節目</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-success" style="cursor: pointer;">捷運直達</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">晴留逸</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">第10集</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-warning" style="cursor: pointer;">新北投站</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-warning" style="cursor: pointer;">新北投車站</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-light" style="cursor: pointer;">手湯</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">北投溫泉博物館</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">地熱谷</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">逸嘉小老師</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">初體驗</span>
+            <span class="badge badge-danger b_f">節目</span>
+		<span class="badge badge-success b_f">捷運直達</span>
+		<span class="badge badge-dark b_f">晴留逸</span>
+		<span class="badge badge-info b_f">第10集</span>
+		<span class="badge badge-warning b_f">新北投站</span>
+		<span class="badge badge-warning b_f">新北投車站</span>
+		<span class="badge badge-light b_f">手湯</span>
+		<span class="badge badge-dark b_f">北投溫泉博物館</span>
+		<span class="badge badge-dark b_f">地熱谷</span>
+		<span class="badge badge-secondary b_f">逸嘉小老師</span>
+		<span class="badge badge-info b_f">初體驗</span>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">劉曉晴</span>, <span onclick="onIdol(this.innerText)">王逸嘉</span>, <span onclick="onIdol(this.innerText)">宮田留佳</span>
+            <span class="m_f">劉曉晴</span>, <span class="m_f">王逸嘉</span>, <span class="m_f">宮田留佳</span>
           </div>
         </div>
       </div>
@@ -133,7 +133,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -153,7 +154,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

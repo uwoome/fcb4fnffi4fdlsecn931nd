@@ -54,7 +54,7 @@
             來自&nbsp;<a href="https://www.instagram.com/hanenyan_akb48teamtp/" target="_blank"><u>hanenyan_akb48teamtp @Instagram</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-warning" style="cursor: pointer;">洗手挑戰</span>
+            <span class="badge badge-warning b_f">洗手挑戰</span>
           </div>
         </div>
       </div>
@@ -63,7 +63,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">曾詩羽</span>
+            <span class="m_f">曾詩羽</span>
           </div>
         </div>
       </div>
@@ -105,7 +105,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -125,7 +126,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

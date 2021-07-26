@@ -54,16 +54,16 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UCajEDiZYhD_9NbFA3nqFYjw" target="_blank"><u>AKB48 Team TP @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">the puzzle5</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">回顧</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">365天的紙飛機</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">馬爾濟斯之歌</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">夢中的婚禮</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">小星星</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">proud of you</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">if i ain't got you</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">officially missing you</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">紅蓮華</span>
+            <span class="badge badge-dark b_f">the puzzle5</span>
+		<span class="badge badge-primary b_f">回顧</span>
+		<span class="badge badge-secondary b_f">365天的紙飛機</span>
+		<span class="badge badge-secondary b_f">馬爾濟斯之歌</span>
+		<span class="badge badge-secondary b_f">夢中的婚禮</span>
+		<span class="badge badge-secondary b_f">小星星</span>
+		<span class="badge badge-secondary b_f">proud of you</span>
+		<span class="badge badge-secondary b_f">if i ain't got you</span>
+		<span class="badge badge-secondary b_f">officially missing you</span>
+		<span class="badge badge-secondary b_f">紅蓮華</span>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">潘姿怡</span>, <span onclick="onIdol(this.innerText)">冼迪琦</span>, <span onclick="onIdol(this.innerText)">李佳俐</span>, <span onclick="onIdol(this.innerText)">柏靈</span>, <span onclick="onIdol(this.innerText)">林亭莉</span>, <span onclick="onIdol(this.innerText)">李采潔</span>, <span onclick="onIdol(this.innerText)">林潔心</span>, <span onclick="onIdol(this.innerText)">李孟純</span>, <span onclick="onIdol(this.innerText)">王逸嘉</span>, <span onclick="onIdol(this.innerText)">劉曉晴</span>
+            <span class="m_f">潘姿怡</span>, <span class="m_f">冼迪琦</span>, <span class="m_f">李佳俐</span>, <span class="m_f">柏靈</span>, <span class="m_f">林亭莉</span>, <span class="m_f">李采潔</span>, <span class="m_f">林潔心</span>, <span class="m_f">李孟純</span>, <span class="m_f">王逸嘉</span>, <span class="m_f">劉曉晴</span>
           </div>
         </div>
       </div>
@@ -135,7 +135,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -155,7 +156,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

@@ -54,11 +54,11 @@
             來自&nbsp;<a href="https://www.facebook.com/AKB48TeamTP" target="_blank"><u>AKB48 Team TP @Facebook</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">生活</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">演唱會</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">the puzzle5</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">展覽</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-light" style="cursor: pointer;">琴</span>
+            <span class="badge badge-danger b_f">生活</span>
+		<span class="badge badge-primary b_f">演唱會</span>
+		<span class="badge badge-dark b_f">the puzzle5</span>
+		<span class="badge badge-primary b_f">展覽</span>
+		<span class="badge badge-light b_f">琴</span>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">柏靈</span>, <span onclick="onIdol(this.innerText)">冼迪琦</span>, <span onclick="onIdol(this.innerText)">潘姿怡</span>, <span onclick="onIdol(this.innerText)">李佳俐</span>, <span onclick="onIdol(this.innerText)">林亭莉</span>
+            <span class="m_f">柏靈</span>, <span class="m_f">冼迪琦</span>, <span class="m_f">潘姿怡</span>, <span class="m_f">李佳俐</span>, <span class="m_f">林亭莉</span>
           </div>
         </div>
       </div>
@@ -109,7 +109,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -129,7 +130,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

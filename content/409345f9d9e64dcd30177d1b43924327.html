@@ -54,8 +54,8 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UCajEDiZYhD_9NbFA3nqFYjw" target="_blank"><u>AKB48 Team TP @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">sakura</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">圓陣</span>
+            <span class="badge badge-dark b_f">sakura</span>
+		<span class="badge badge-secondary b_f">圓陣</span>
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">曾詩羽</span>, <span onclick="onIdol(this.innerText)">劉曉晴</span>, <span onclick="onIdol(this.innerText)">林于馨</span>, <span onclick="onIdol(this.innerText)">林易沄</span>, <span onclick="onIdol(this.innerText)">林家瑩</span>, <span onclick="onIdol(this.innerText)">袁子筑</span>
+            <span class="m_f">曾詩羽</span>, <span class="m_f">劉曉晴</span>, <span class="m_f">林于馨</span>, <span class="m_f">林易沄</span>, <span class="m_f">林家瑩</span>, <span class="m_f">袁子筑</span>
           </div>
         </div>
       </div>
@@ -114,7 +114,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -134,7 +135,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

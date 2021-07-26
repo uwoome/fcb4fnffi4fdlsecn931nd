@@ -16,13 +16,50 @@ $('#idolModal').on('show.bs.modal', function (event) {
     $('.modal-footer').css('background', backgroundColor)
 
     $('#idolModalContent').html(content)
-    $('#idolModalButton').text('轉運前往 #' + currentIdol)
+    $('#idolModalButton').text('前往 #' + currentIdol + ' 團體動態')
+    $('#idolModalIndividualButton').text('前往 #' + currentIdol + ' 個人動態')
 })
 
 $('#filterModal').on('show.bs.modal', function (event) {
     $('.modal-header').css('background', 'white')
     $('.modal-body').css('background', 'white')
     $('.modal-footer').css('background', 'white')
+})
+
+$('.m_f').on('click', function(event) {
+    onIdol(this.innerHTML)
+})
+
+$('.badge.badge-danger.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-primary.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-success.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-warning.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-info.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-dark.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-secondary.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-light.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
 })
 
 function onIdol(item) {
@@ -37,28 +74,30 @@ function onFilter(filterWord) {
 }
 
 function filterTimeline(fromMembers) {
-    var filterWord = setTimelineItemVisibility(fromMembers)
+    var filterWord = getFilterWord(fromMembers)
     var new_url = '../index.html?q=' + filterWord;
-    if (filterWord == '' || filterWord == '所有內容') {
+    if (filterWord == '') {
         new_url = '../index.html'
     }
     window.location.href = new_url
 }
 
-function setTimelineItemVisibility(fromMembers) {
+function filterTimelineIndividual(fromMembers) {
+    var filterWord = getFilterWord(fromMembers)
+    var new_url = '../individual.html?q=' + filterWord;
+    if (filterWord == '') {
+        new_url = '../individual.html'
+    }
+    window.location.href = new_url
+}
+
+function getFilterWord(fromMembers) {
     var filterWord = $('#filterWord').val()
     if (fromMembers) {
         filterWord = currentIdol
     } else if (filterWord == '') {
-        filterWord = '所有內容'
+        filterWord = ''
     }
-    $('.timeline').children().each(function () {
-        if (filterWord != '所有內容' && this.innerText.indexOf(filterWord) == -1) {
-            this.className = 'tno'
-        } else {
-            this.className = ''
-        }
-    });
     return filterWord
 }
 

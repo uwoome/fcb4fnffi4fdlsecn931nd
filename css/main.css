@@ -82,6 +82,38 @@ div.idolname > span {
     background-color: #f5e888;
 }
 
+.badge.badge-danger.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-primary.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-success.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-warning.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-info.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-dark.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-secondary.b_f {
+    cursor: pointer;
+}
+
+.badge.badge-light.b_f {
+    cursor: pointer;
+}
+
 /* div.idolname > span.d {
     color: #f5e888;
     cursor: pointer;

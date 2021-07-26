@@ -54,10 +54,10 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UCajEDiZYhD_9NbFA3nqFYjw" target="_blank"><u>AKB48 Team TP @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">公告</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">宣傳</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">直播</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-success" style="cursor: pointer;">浪live</span>
+            <span class="badge badge-danger b_f">公告</span>
+		<span class="badge badge-info b_f">宣傳</span>
+		<span class="badge badge-primary b_f">直播</span>
+		<span class="badge badge-success b_f">浪live</span>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">阿部瑪利亞</span>, <span onclick="onIdol(this.innerText)">陳詩雅</span>, <span onclick="onIdol(this.innerText)">劉潔明</span>, <span onclick="onIdol(this.innerText)">林于馨</span>, <span onclick="onIdol(this.innerText)">董子瑄</span>, <span onclick="onIdol(this.innerText)">鄭佳郁</span>, <span onclick="onIdol(this.innerText)">高硯晨</span>, <span onclick="onIdol(this.innerText)">李采潔</span>, <span onclick="onIdol(this.innerText)">鄭妤葳</span>, <span onclick="onIdol(this.innerText)">張法法</span>, <span onclick="onIdol(this.innerText)">羅瑞婷</span>, <span onclick="onIdol(this.innerText)">劉語晴</span>, <span onclick="onIdol(this.innerText)">張羽翎</span>, <span onclick="onIdol(this.innerText)">邱品涵</span>, <span onclick="onIdol(this.innerText)">李孟純</span>, <span onclick="onIdol(this.innerText)">蔡亞恩</span>, <span onclick="onIdol(this.innerText)">李佳俐</span>, <span onclick="onIdol(this.innerText)">林易沄</span>, <span onclick="onIdol(this.innerText)">小山美玲</span>, <span onclick="onIdol(this.innerText)">藤井麻由</span>, <span onclick="onIdol(this.innerText)">王逸嘉</span>, <span onclick="onIdol(this.innerText)">蔡伊柔</span>, <span onclick="onIdol(this.innerText)">曾詩羽</span>, <span onclick="onIdol(this.innerText)">冼迪琦</span>, <span onclick="onIdol(this.innerText)">潘姿怡</span>, <span onclick="onIdol(this.innerText)">劉曉晴</span>, <span onclick="onIdol(this.innerText)">林倢</span>, <span onclick="onIdol(this.innerText)">高云珏</span>, <span onclick="onIdol(this.innerText)">林家瑩</span>, <span onclick="onIdol(this.innerText)">賈宜蓁</span>, <span onclick="onIdol(this.innerText)">柏靈</span>, <span onclick="onIdol(this.innerText)">林潔心</span>, <span onclick="onIdol(this.innerText)">周佳郁</span>, <span onclick="onIdol(this.innerText)">國興瑀</span>, <span onclick="onIdol(this.innerText)">本田柚萱</span>
+            <span class="m_f">阿部瑪利亞</span>, <span class="m_f">陳詩雅</span>, <span class="m_f">劉潔明</span>, <span class="m_f">林于馨</span>, <span class="m_f">董子瑄</span>, <span class="m_f">鄭佳郁</span>, <span class="m_f">高硯晨</span>, <span class="m_f">李采潔</span>, <span class="m_f">鄭妤葳</span>, <span class="m_f">張法法</span>, <span class="m_f">羅瑞婷</span>, <span class="m_f">劉語晴</span>, <span class="m_f">張羽翎</span>, <span class="m_f">邱品涵</span>, <span class="m_f">李孟純</span>, <span class="m_f">蔡亞恩</span>, <span class="m_f">李佳俐</span>, <span class="m_f">林易沄</span>, <span class="m_f">小山美玲</span>, <span class="m_f">藤井麻由</span>, <span class="m_f">王逸嘉</span>, <span class="m_f">蔡伊柔</span>, <span class="m_f">曾詩羽</span>, <span class="m_f">冼迪琦</span>, <span class="m_f">潘姿怡</span>, <span class="m_f">劉曉晴</span>, <span class="m_f">林倢</span>, <span class="m_f">高云珏</span>, <span class="m_f">林家瑩</span>, <span class="m_f">賈宜蓁</span>, <span class="m_f">柏靈</span>, <span class="m_f">林潔心</span>, <span class="m_f">周佳郁</span>, <span class="m_f">國興瑀</span>, <span class="m_f">本田柚萱</span>
           </div>
         </div>
       </div>
@@ -114,7 +114,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -134,7 +135,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

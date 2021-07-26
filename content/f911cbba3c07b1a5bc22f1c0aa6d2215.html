@@ -54,9 +54,9 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UCajEDiZYhD_9NbFA3nqFYjw" target="_blank"><u>AKB48 Team TP @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">生日會</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">慶生</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">花絮</span>
+            <span class="badge badge-primary b_f">生日會</span>
+		<span class="badge badge-primary b_f">慶生</span>
+		<span class="badge badge-info b_f">花絮</span>
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">邱品涵</span>, <span onclick="onIdol(this.innerText)">林家瑩</span>, <span onclick="onIdol(this.innerText)">國興瑀</span>, <span onclick="onIdol(this.innerText)">張羽翎</span>, <span onclick="onIdol(this.innerText)">蔡亞恩</span>
+            <span class="m_f">邱品涵</span>, <span class="m_f">林家瑩</span>, <span class="m_f">國興瑀</span>, <span class="m_f">張羽翎</span>, <span class="m_f">蔡亞恩</span>
           </div>
         </div>
       </div>
@@ -119,7 +119,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -139,7 +140,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

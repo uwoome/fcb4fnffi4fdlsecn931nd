@@ -54,12 +54,12 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UCajEDiZYhD_9NbFA3nqFYjw" target="_blank"><u>AKB48 Team TP @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">節目</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-warning" style="cursor: pointer;">包包大突擊</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">daisy</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-light" style="cursor: pointer;">bellflower​</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-light" style="cursor: pointer;">sakura​</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-light" style="cursor: pointer;">開箱</span>
+            <span class="badge badge-danger b_f">節目</span>
+		<span class="badge badge-warning b_f">包包大突擊</span>
+		<span class="badge badge-dark b_f">daisy</span>
+		<span class="badge badge-light b_f">bellflower​</span>
+		<span class="badge badge-light b_f">sakura​</span>
+		<span class="badge badge-light b_f">開箱</span>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">陳詩雅​</span>, <span onclick="onIdol(this.innerText)">林倢​</span>, <span onclick="onIdol(this.innerText)">藤井麻由​</span>, <span onclick="onIdol(this.innerText)">小山美玲​</span>, <span onclick="onIdol(this.innerText)">李采潔​</span>, <span onclick="onIdol(this.innerText)">吳騏卉​</span>, <span onclick="onIdol(this.innerText)">吳婉淩​</span>, <span onclick="onIdol(this.innerText)">袁子筑</span>, <span onclick="onIdol(this.innerText)">林亭莉</span>, <span onclick="onIdol(this.innerText)">林易沄</span>, <span onclick="onIdol(this.innerText)">蔡伊柔</span>
+            <span class="m_f">陳詩雅​</span>, <span class="m_f">林倢​</span>, <span class="m_f">藤井麻由​</span>, <span class="m_f">小山美玲​</span>, <span class="m_f">李采潔​</span>, <span class="m_f">吳騏卉​</span>, <span class="m_f">吳婉淩​</span>, <span class="m_f">袁子筑</span>, <span class="m_f">林亭莉</span>, <span class="m_f">林易沄</span>, <span class="m_f">蔡伊柔</span>
           </div>
         </div>
       </div>
@@ -150,7 +150,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -170,7 +171,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

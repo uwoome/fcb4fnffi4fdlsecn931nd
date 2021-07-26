@@ -54,12 +54,12 @@
             來自&nbsp;<a href="https://www.youtube.com/channel/UC4BiVcbKkIDI02_pb1nz3LQ" target="_blank"><u>Genoveva Oshi @YouTube</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">活動</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-primary" style="cursor: pointer;">演出</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">中國</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">上海</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-danger" style="cursor: pointer;">asia festival</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-dark" style="cursor: pointer;">wrd48</span>
+            <span class="badge badge-danger b_f">活動</span>
+		<span class="badge badge-primary b_f">演出</span>
+		<span class="badge badge-dark b_f">中國</span>
+		<span class="badge badge-dark b_f">上海</span>
+		<span class="badge badge-danger b_f">asia festival</span>
+		<span class="badge badge-dark b_f">wrd48</span>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">邱品涵</span>, <span onclick="onIdol(this.innerText)">劉語晴</span>
+            <span class="m_f">邱品涵</span>, <span class="m_f">劉語晴</span>
           </div>
         </div>
       </div>
@@ -110,7 +110,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -130,7 +131,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

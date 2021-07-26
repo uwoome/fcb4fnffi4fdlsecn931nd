@@ -54,10 +54,10 @@
             來自&nbsp;<a href="https://www.instagram.com/rei_0913_akb48teamtp/" target="_blank"><u>rei_0913_akb48teamtp @Instagram</u></a>
           </div>
           <div>
-            <span onclick="onFilter(this.innerText)" class="badge badge-success" style="cursor: pointer;">igtv</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-info" style="cursor: pointer;">cover</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">keyboard</span>
-		<span onclick="onFilter(this.innerText)" class="badge badge-secondary" style="cursor: pointer;">g小調波蘭舞曲</span>
+            <span class="badge badge-success b_f">igtv</span>
+		<span class="badge badge-info b_f">cover</span>
+		<span class="badge badge-secondary b_f">keyboard</span>
+		<span class="badge badge-secondary b_f">g小調波蘭舞曲</span>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@
         <div class="card-body">
           <h5>• 相關成員：</h5>
           <div class="idolname" style="margin-left: 0.8rem;">
-            <span onclick="onIdol(this.innerText)">柏靈</span>
+            <span class="m_f">柏靈</span>
           </div>
         </div>
       </div>
@@ -108,7 +108,8 @@
               
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="idolModalButton" data-dismiss="modal" onclick="filterTimeline(true)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(true)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>
@@ -128,7 +129,8 @@
               <input autofocus id="filterWord" class="form-control" type="text" placeholder="所有內容">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往</button>
+              <button type="button" class="btn btn-primary" id="filterModalButton" data-dismiss="modal" onclick="filterTimeline(false)" style="width: 100%;">轉運前往 團體動態</button>
+              <button type="button" class="btn btn-primary" id="idolModalIndividualButton" data-dismiss="modal" onclick="filterTimelineIndividual(false)" style="width: 100%; margin-top: 0.3rem;">轉運前往 個人動態</button>
             </div>
           </div>
         </div>

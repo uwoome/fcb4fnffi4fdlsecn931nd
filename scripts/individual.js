@@ -51,6 +51,42 @@ $('#filterModal').on('show.bs.modal', function (event) {
     $('.modal-footer').css('background', 'white')
 })
 
+$('.m_f').on('click', function(event) {
+    onIdol(this.innerHTML)
+})
+
+$('.badge.badge-danger.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-primary.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-success.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-warning.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-info.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-dark.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-secondary.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
+$('.badge.badge-light.b_f').on('click', function(event) {
+    onFilter(this.innerHTML)
+})
+
 function onIdol(item) {
     currentIdol = item
     if (item in MEMBER_COLOR)
