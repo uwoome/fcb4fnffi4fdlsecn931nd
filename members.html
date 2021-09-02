@@ -37,62 +37,71 @@
     </script>
   </head>
   <body style="background: linear-gradient(to right, #ff701c, #ffcf00 30%, #ffcf00 70%, #ff701c);">
-    <div class="container mt-3 mb-5">
-      <div style="display: inline-flex; align-items: center; margin-bottom: 0.5rem;">
-        <a href="index.html">
-            <img width="40rem" height="40rem" left src="images/ttp_icon_a.png" alt="AKB48 Team TP 轉運站"></img>
-        </a>
-        <a href="index.html" style="color:black;">
-          <h4 style="margin-left: 0.5rem; margin-top: 0.4rem; margin-bottom: 0.5rem;">AKB48 Team TP 轉運站</h4>
-        </a>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background: linear-gradient(to right, #ff701c, #ffcf00 30%, #ffcf00 70%, #ff701c);">
+      <a class="navbar-brand" style="color:black;" href="index.html">
+        <img width="30rem" height="30rem" left src="images/ttp_icon_a.png" class="d-inline-block align-top" alt="AKB48 Team TP 轉運站"></img>
+        AKB48 Team TP 轉運站
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" style="color:black;" href="index.html">團體動態</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:black;" href="individual.html">個人動態</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color:red;" href="members.html">成員名單</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <h6 class="float-right" style="margin-top: 0.65rem; margin-right: 0.5rem;">[<a href="individual.html" style="color: rgb(32, 37, 41); text-decoration: underline;">個人動態</a>]</h6>
-        <h6 class="float-right" style="margin-top: 0.65rem; margin-right: 0.5rem;">[<a href="index.html" style="color: rgb(32, 37, 41); text-decoration: underline;">團體動態</a>]</h6>
-      </div>
-      <div>
-        <div style="display: inline-flex; align-items: center; margin-left: 0.5rem;">
-          <div class="dropdown">
-            <a class="btn btn-ttp-1 dropdown-toggle" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-right: 1rem;">
-              所有成員
-            </a>
-            <h6 id="member_count" style="margin-left: 0.75rem; margin-top: 0.75rem;"></h6>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu" style="height: 30rem; overflow-y: auto;">
-              <a class="dropdown-item active"value="all">所有成員</a>
-              <div class="dropdown-divider"></div>
-              <h6 class="dropdown-header">Group</h6>
-              <a class="dropdown-item" value="daisy">Unit Daisy</a>
-              <a class="dropdown-item" value="bellflower">Unit Bellflower</a>
-              <a class="dropdown-item" value="sakura">Unit Sakura</a>
-              <a class="dropdown-item" value="wrd48">WRD48</a>
-              <a class="dropdown-item" value="the-puzzle5">The Puzzle5</a>
-              <a class="dropdown-item" value="leader">頭目</a>
-              <a class="dropdown-item" value="akb48tw">AKB48台灣研究生</a>
-              <a class="dropdown-item" value="tpeone">一期生</a>
-              <a class="dropdown-item" value="ttptwo">二期生</a>
-              <a class="dropdown-item" value="formal">正式生</a>
-              <a class="dropdown-item" value="trainee">研究生</a>
-              <a class="dropdown-item" value="sskr">SSKR</a>
-              <a class="dropdown-item" value="mini-four">mini four</a>
-              <a class="dropdown-item" value="101girl">101辣妹</a>
-              <a class="dropdown-item" value="metro">晴留逸</a>
-              <a class="dropdown-item" value="keeler">Keeler</a>
-              <a class="dropdown-item" value="soba-star">卉星吵麵</a>
-              <a class="dropdown-item" value="tp-chipmunk">TP花栗鼠</a>
-              <a class="dropdown-item" value="ghost-family">靈逸嘉婷</a>
-              <a class="dropdown-item" value="lemon">檸檬弟</a>
-              <a class="dropdown-item" value="000">000</a>
-              <a class="dropdown-item" value="tako-girl">章魚燒少女</a>
-              <a class="dropdown-item" value="4-black">四黑</a>
-              <a class="dropdown-item" value="angel">天使團</a>
-              <a class="dropdown-item" value="never">珏對不卉</a>
-              <a class="dropdown-item" value="accidentally">易布曉馨</a>
-              <a class="dropdown-item" value="cute">可愛團</a>
-              <a class="dropdown-item" value="night-market">雅琦人生</a>
-              <a class="dropdown-item" value="rest">暫停中</a>
-            </div>
-          </div>
+      <div class="dropdown mr-5">
+        <a class="btn btn-ttp-1 dropdown-toggle" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-right: 1rem;">
+          所有成員
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenu" style="height: 30rem; overflow-y: auto;">
+          <a class="dropdown-item active"value="all">所有成員</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Group</h6>
+          <a class="dropdown-item" value="daisy">Unit Daisy</a>
+          <a class="dropdown-item" value="bellflower">Unit Bellflower</a>
+          <a class="dropdown-item" value="sakura">Unit Sakura</a>
+          <a class="dropdown-item" value="wrd48">WRD48</a>
+          <a class="dropdown-item" value="the-puzzle5">The Puzzle5</a>
+          <a class="dropdown-item" value="leader">頭目</a>
+          <a class="dropdown-item" value="akb48tw">AKB48台灣研究生</a>
+          <a class="dropdown-item" value="tpeone">一期生</a>
+          <a class="dropdown-item" value="ttptwo">二期生</a>
+          <a class="dropdown-item" value="formal">正式生</a>
+          <a class="dropdown-item" value="trainee">研究生</a>
+          <a class="dropdown-item" value="sskr">SSKR</a>
+          <a class="dropdown-item" value="mini-four">mini four</a>
+          <a class="dropdown-item" value="101girl">101辣妹</a>
+          <a class="dropdown-item" value="metro">晴留逸</a>
+          <a class="dropdown-item" value="keeler">Keeler</a>
+          <a class="dropdown-item" value="soba-star">卉星吵麵</a>
+          <a class="dropdown-item" value="tp-chipmunk">TP花栗鼠</a>
+          <a class="dropdown-item" value="ghost-family">靈逸嘉婷</a>
+          <a class="dropdown-item" value="lemon">檸檬弟</a>
+          <a class="dropdown-item" value="000">000</a>
+          <a class="dropdown-item" value="tako-girl">章魚燒少女</a>
+          <a class="dropdown-item" value="4-black">四黑</a>
+          <a class="dropdown-item" value="angel">天使團</a>
+          <a class="dropdown-item" value="never">珏對不卉</a>
+          <a class="dropdown-item" value="accidentally">易布曉馨</a>
+          <a class="dropdown-item" value="cute">可愛團</a>
+          <a class="dropdown-item" value="night-market">雅琦人生</a>
+          <a class="dropdown-item" value="rest">暫停中</a>
         </div>
+      </div>
+    </nav>
+
+    <div class="container mt-3 mb-5">
+      <div style="margin-top: 6rem;">
+        <h6 id="member_count" style="margin-left: 0.75rem; margin-top: 0.75rem;"></h6>
       </div>
 
       <div class="card-columns" style="margin-top: 1rem; margin-left: 0.5rem; margin-right: 0.5rem;">
@@ -118,7 +127,7 @@
 <div class="card bg-bellflower-1 p-3" id="tsai-yi-jou" name="bellflower tpeone trainee tako-girl"><div class="card-body"><h5 class="card-title text-center">蔡伊柔</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Tsai, Yi-Jou</div><div class="text-center">( 肉肉 )</div><blockquote class="blockquote mt-2 text-center"><p>瘦肉 肥肉<br>我是你的 <u style="font-weight:bold; font-style:italic;">心頭肉</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">蔡伊柔</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/tsai-yi-jou" target="_blank">蔡伊柔</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/jou0715_akb48teamtp" target="_blank">jou0715_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/1398860" target="_blank">1398860</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：小肉豆</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：寶藍色/黑</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMf7df85s15fv5BcCKx32Lc8" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('蔡伊柔')" style="width: 100%;">前往 #蔡伊柔 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('蔡伊柔')" style="width: 100%; margin-top: 0.3rem;">前往 #蔡伊柔 個人動態</button></div></div>
 <div class="card bg-bellflower-1 p-3" id="gao-yun-jue" name="bellflower tpeone trainee 4-black never"><div class="card-body"><h5 class="card-title text-center">高云珏</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Gao, Yun-Jue</div><div class="text-center">( 珏哥/伊娃 )</div><blockquote class="blockquote mt-2 text-center"><p>エババ <u style="font-weight:bold; font-style:italic;">エバ</u> エババ <u style="font-weight:bold; font-style:italic;">エバ</u><br>我就是你們的 <u style="font-weight:bold; font-style:italic;">珏哥</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">高云珏</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/gao-yun-jue" target="_blank">高云珏</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/jue_1020_akb48teamtp" target="_blank">jue_1020_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/3650590" target="_blank">3650590</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：河童窩/河童幫</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：翠綠</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMcGVFMdiPhmNNv0y_PbhDql" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('高云珏')" style="width: 100%;">前往 #高云珏 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('高云珏')" style="width: 100%; margin-top: 0.3rem;">前往 #高云珏 個人動態</button></div></div>
 <div class="card bg-bellflower-1 p-3" id="wang-yi-chia" name="bellflower tpeone trainee metro ghost-family 4-black"><div class="card-body"><h5 class="card-title text-center">王逸嘉</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Wang, Yi-Chia</div><div class="text-center">( 逸嘉/嘉義王 )</div><blockquote class="blockquote mt-2 text-center"><p>一個字形容我 <u style="font-weight:bold; font-style:italic;">ㄎㄧㄤ</u><br>兩個字形容我 <u style="font-weight:bold; font-style:italic;">ㄎㄧㄤㄎㄧㄤ</u><br>三個字形容我 <u style="font-weight:bold; font-style:italic;">卡哇伊</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">王逸嘉</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/wang-yi-chia" target="_blank">王逸嘉</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/cywang_akb48teamtp" target="_blank">cywang_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/3650583" target="_blank">3650583</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：雞肉飯</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：黃/白</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMc5CtgXdcNNrhbEx1uzPztB" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('王逸嘉')" style="width: 100%;">前往 #王逸嘉 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('王逸嘉')" style="width: 100%; margin-top: 0.3rem;">前往 #王逸嘉 個人動態</button></div></div>
-<div class="card bg-bellflower-1 p-3" id="chang-fa-fa" name="bellflower tpeone trainee 4-black"><div class="card-body"><h5 class="card-title text-center">張法法</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Chang, Fa-Fa</div><div class="text-center">( 法法/FF/Alpha )</div><blockquote class="blockquote mt-2 text-center"><p>FFF團的大家<br>請告訴我唯一的教條是什麼？ <u style="font-weight:bold; font-style:italic;">知法飯法</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">張法法</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/chang-fa-fa" target="_blank">張法法</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/fafa_alpha_akb48teamtp" target="_blank">fafa_alpha_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/3652111" target="_blank">3652111</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：FFF</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：黑/銀</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMdU9zVPTBxFdQV8b4hiYncM" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('張法法')" style="width: 100%;">前往 #張法法 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('張法法')" style="width: 100%; margin-top: 0.3rem;">前往 #張法法 個人動態</button></div></div>
+<div class="card bg-bellflower-1 p-3" id="chang-fa-fa" name="bellflower tpeone trainee 4-black"><div class="card-body"><h5 class="card-title text-center">張法法</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Chang, Fa-Fa</div><div class="text-center">( 法法/FF/Alpha )</div><blockquote class="blockquote mt-2 text-center"><p>FFF團的大家<br>請告訴我唯一的教條是什麼？<br><u style="font-weight:bold; font-style:italic;">知法飯法</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">張法法</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/chang-fa-fa" target="_blank">張法法</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/fafa_alpha_akb48teamtp" target="_blank">fafa_alpha_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/3652111" target="_blank">3652111</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：FFF</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：黑/銀</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMdU9zVPTBxFdQV8b4hiYncM" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('張法法')" style="width: 100%;">前往 #張法法 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('張法法')" style="width: 100%; margin-top: 0.3rem;">前往 #張法法 個人動態</button></div></div>
 <div class="card bg-bellflower-1 p-3" id="cheng-yu-wei" name="bellflower tpeone trainee"><div class="card-body"><h5 class="card-title text-center">鄭妤葳</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Cheng, Yu-Wei</div><div class="text-center">( 熊妹 )</div><blockquote class="blockquote mt-2 text-center"><p>喂喂 今天的熊妹已經上線囉！<br>大家上線了嗎？ <u style="font-weight:bold; font-style:italic;">上線了</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">鄭妤葳</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/cheng-yu-wei" target="_blank">鄭妤葳</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/yu_wei_akb48teamtp" target="_blank">yu_wei_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/3793753" target="_blank">3793753</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：好威盟/行動充</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：橘/水藍</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMePC5IG617YoZIVU6PdL3xi" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('鄭妤葳')" style="width: 100%;">前往 #鄭妤葳 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('鄭妤葳')" style="width: 100%; margin-top: 0.3rem;">前往 #鄭妤葳 個人動態</button></div></div>
 <div class="card bg-bellflower-1 p-3" id="lo-jui-ting" name="bellflower tpeone trainee ghost-family angel"><div class="card-body"><h5 class="card-title text-center">羅瑞婷</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Lo, Jui-Ting</div><div class="text-center">( 瑞婷 )</div><blockquote class="blockquote mt-2 text-center"><p>我是你們的小兔子 <u style="font-weight:bold; font-style:italic;">うさき</u><br>也是你們的 <u style="font-weight:bold; font-style:italic;">天使</u><br>下凡就4要 <u style="font-weight:bold; font-style:italic;">8著你</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">羅瑞婷</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/lo-jui-ting" target="_blank">羅瑞婷</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/juiting_akb48teamtp" target="_blank">juiting_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/3650751" target="_blank">3650751</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：小可愛</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：白</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMeHfC9g1vOLbDmgJ2MInhuD" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('羅瑞婷')" style="width: 100%;">前往 #羅瑞婷 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('羅瑞婷')" style="width: 100%; margin-top: 0.3rem;">前往 #羅瑞婷 個人動態</button></div></div>
 <div class="card bg-bellflower-1 p-3" id="weng-tung-hsun" name="bellflower ttptwo trainee"><div class="card-body"><h5 class="card-title text-center">翁彤薰</h5><div class="text-muted text-center" style="margin-top: -0.9rem;">Weng, Tung-Hsun</div><div class="text-center">( 嗡嗡 )</div><blockquote class="blockquote mt-2 text-center"><p>遠看拉克絲<br>近看 <u style="font-weight:bold; font-style:italic;">科加斯</u></p><footer class="blockquote-footer text-right"><cite title="Source Title">翁彤薰</cite> catchphrase</footer></blockquote><hr/><blockquote class="blockquote mt-2 text-center"><div class="card-text">Unit Bellflower</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">官網資料：<a href="https://www.akb48teamtp.com/products/weng-tung-hsun" target="_blank">翁彤薰</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">IG：<a href="https://www.instagram.com/tunghsun_akb48teamtp" target="_blank">tunghsun_akb48teamtp</a></div></blockquote><blockquote class="blockquote mt-2 "><div class="card-text">直播：<a href="https://www.lang.live/room/4663722" target="_blank">4663722</a></div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">粉絲團：果然翁/小兔兔/乘客</div></blockquote><blockquote class="blockquote mt-2"><div class="card-text">應援色：紅</div></blockquote><hr class=""/><blockquote class="blockquote mt-2 text-center "><div class="card-text">直播記錄</div><a href="https://www.youtube.com/playlist?list=PLC-hAD0JqfMehoNxTzqCqSyJ0mj3BsRKY" target="_blank">[小翼_香港] 錄影上傳</a></blockquote><button type="button" class="btn btn-primary" onclick="filterTimeline('翁彤薰')" style="width: 100%;">前往 #翁彤薰 團體動態</button><button type="button" class="btn btn-primary" onclick="filterTimelineIndividual('翁彤薰')" style="width: 100%; margin-top: 0.3rem;">前往 #翁彤薰 個人動態</button></div></div>
