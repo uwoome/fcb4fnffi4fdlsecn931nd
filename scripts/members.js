@@ -1,4 +1,4 @@
-member_group = ['all','daisy','captain','leader','akb48tw','tpeone','formal','sskr','night-market','the-puzzle5','tp-chipmunk','wrd48','lemon','mini-four','ghost-family','tako-girl','keeler','soba-star','trainee','riruriru','angel','rest','ttptwo','metro','bellflower','101girl','lymy','3-black','never','sakura','accidentally','000','cute']
+member_group = ['all','daisy','captain','leader','akb48tw','tpeone','formal','sskr','night-market','the-puzzle5','tp-chipmunk','wrd48','lemon','mini-four','ghost-family','tako-girl','keeler','soba-star','trainee','riruriru','angel','rest','ttptwo','metro','bellflower','101girl','lymy','3-black','never','former','sakura','accidentally','000','cute']
 lastUnit = 'ttp'
 
 $(document).ready(function(){
@@ -70,12 +70,23 @@ function setItemVisibility(word) {
     }
     var memberCount = 0
     $('.card-columns').children().each(function () {
-        if (filterWord == 'all') {
-            this.style.cssText = '';
-            memberCount++
+        var name = this.getAttribute('name')
+        if (filterWord == 'former') {
+            if (name.indexOf('former') != -1) {
+                this.style.cssText = '';
+                memberCount++
+            } else {
+                this.style.cssText = 'display: none;';
+            }
+        } else if (filterWord == 'all') {
+            if (name.indexOf('former') != -1) {
+                this.style.cssText = 'display: none;';
+            } else {
+                this.style.cssText = '';
+                memberCount++
+            }
         } else {
-            var name = this.getAttribute('name')
-            if (name.indexOf(filterWord) != -1) {
+            if (name.indexOf('former') == -1 && name.indexOf(filterWord) != -1) {
                 this.style.cssText = '';
                 memberCount++
             } else {
