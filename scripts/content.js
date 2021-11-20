@@ -8,7 +8,9 @@ $('#idolModal').on('show.bs.modal', function (event) {
         leaderHeader = '👑&nbsp;&nbsp;'
     var isShowLive = (memberInfoList[5] != '')? '' : 'tno'
     var isShowLiveFile = (memberInfoList[6] != '')? '' : 'tno'
-    var content = MEMBER_TEMPLATE.replaceAll('((member_item_unit_class))',getUnitName(memberInfoList[2])).replaceAll('((member_item_unit))',leaderHeader + 'Unit ' + memberInfoList[2]).replaceAll('((member_item_name))',memberInfoList[0]).replaceAll('((member_item_en_name_format))',getFormatEnglishName(memberInfoList[3])).replaceAll('((member_item_nickname))',memberInfoList[1]).replaceAll('((member_item_info_url))',OFFICIAL_MEMBER_URL+memberInfoList[3]).replaceAll('((member_item_ig))',memberInfoList[4]).replaceAll('((member_item_ig_url))',OFFICIAL_IG_URL+memberInfoList[4]).replaceAll('((member_item_live))',memberInfoList[5]).replaceAll('((member_item_live_url))',OFFICIAL_LIVE_URL+memberInfoList[5]).replaceAll('((member_item_live_record_name))',memberInfoList[6]).replaceAll('((member_item_live_record_url))',OFFICIAL_LIVE_FILE_URL+memberInfoList[7]).replaceAll('((member_item_catchphrase))', getCatchphraseHtml(memberInfoList[8])).replaceAll('((member_item_fans_group))',memberInfoList[9]).replaceAll('((member_item_colors))',memberInfoList[10]).replaceAll('((is_show_live))',isShowLive).replaceAll('((is_show_live_file))',isShowLiveFile)
+    var isFormer = (memberInfoList[2] == 'Former')? 'tno' : ''
+    var isFormerText = (memberInfoList[2] == 'Former')? '' : 'text-center'
+    var content = MEMBER_TEMPLATE.replaceAll('((member_item_unit_class))',getUnitName(memberInfoList[2])).replaceAll('((member_item_unit))',leaderHeader + 'Unit ' + memberInfoList[2]).replaceAll('((member_item_name))',memberInfoList[0]).replaceAll('((member_item_en_name_format))',getFormatEnglishName(memberInfoList[3])).replaceAll('((member_item_nickname))',memberInfoList[1]).replaceAll('((member_item_info_url))',OFFICIAL_MEMBER_URL+memberInfoList[3]).replaceAll('((member_item_ig))',memberInfoList[4]).replaceAll('((member_item_ig_url))',OFFICIAL_IG_URL+memberInfoList[4]).replaceAll('((member_item_live))',memberInfoList[5]).replaceAll('((member_item_live_url))',OFFICIAL_LIVE_URL+memberInfoList[5]).replaceAll('((member_item_live_record_name))',memberInfoList[6]).replaceAll('((member_item_live_record_url))',OFFICIAL_LIVE_FILE_URL+memberInfoList[7]).replaceAll('((member_item_catchphrase))', getCatchphraseHtml(memberInfoList[8])).replaceAll('((member_item_fans_group))',memberInfoList[9]).replaceAll('((member_item_colors))',memberInfoList[10]).replaceAll('((is_show_live))',isShowLive).replaceAll('((is_show_live_file))',isShowLiveFile).replaceAll('((is_former))',isFormer).replaceAll('((is_former_text))',isFormerText)
     var backgroundColor = MEMBER_COLOR[currentIdol]
 
     $('.modal-header').css('background', backgroundColor)
@@ -122,8 +124,10 @@ function getUnitName(unit) {
         return 'daisy'
     } else if (unit.indexOf('Bellflower') != -1) {
         return 'bellflower'
-    } else {
+    } else if (unit.indexOf('Sakura') != -1) {
         return 'sakura'
+    } else {
+        return 'former'
     }
 }
 

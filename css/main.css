@@ -57,6 +57,9 @@ div.idolname > span {
 .bg-sakura-1 {
     background-color: #ffbdc6;
 }
+.bg-former-1 {
+    background-color: #eb8aeb;
+}
 
 .btn-ttp-1 {
     background-color: #ffcf00;
@@ -69,6 +72,9 @@ div.idolname > span {
 }
 .btn-sakura-1 {
     background-color: #ffbdc6;
+}
+.btn-former-1 {
+    background-color: #eb8aeb;
 }
 
 .badge-warning {
