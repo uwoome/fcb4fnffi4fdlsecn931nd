@@ -1,4 +1,4 @@
-item_group = ['all','song','dance']
+item_group = ['all','song','dance','podcast']
 
 $(document).ready(function(){
     var url = location.href;
