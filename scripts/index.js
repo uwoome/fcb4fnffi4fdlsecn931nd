@@ -29,7 +29,7 @@ $('#idolModal').on('show.bs.modal', function (event) {
     var memberInfo = MEMBER_INFO[currentIdol]
     memberInfoList = memberInfo.split(',')
     var leaderHeader = ''
-    if (memberInfoList[0] == '陳詩雅' || memberInfoList[0] == '劉語晴' || memberInfoList[0] == '劉曉晴')
+    if (memberInfoList[0] == '劉語晴' || memberInfoList[0] == '王逸嘉')
         leaderHeader = '👑&nbsp;&nbsp;'
     var isShowLive = (memberInfoList[5] != '')? '' : 'tno'
     var isShowLiveFile = (memberInfoList[6] != '')? '' : 'tno'

@@ -1,4 +1,4 @@
-member_group = ['all','daisy','leader','akb48tw','tpeone','formal','sskr','night-market','tpev','unit-p','the-puzzle5','tp-chipmunk','wrd48','lemon','unit-t','mini-four','ghost-family','tako-girl','keeler','soba-star','trainee','riruriru','rest','angel','brownie','ttptwo','metro','captain','bellflower','101girl','lymy','3-black','never','the-pi22as','hey-bye','sakura','accidentally','000','cute','former']
+member_group = ['all','daisy','akb48tw','tpeone','formal','sskr','night-market','tpev','unit-p','the-puzzle5','tp-chipmunk','wrd48','lemon','unit-t','mini-four','ghost-family','tako-girl','keeler','soba-star','trainee','riruriru','rest','angel','brownie','ttptwo','metro','captain','bellflower','leader','101girl','lymy','3-black','never','the-pi22as','hey-bye','sakura','accidentally','000','cute','former']
 lastUnit = 'ttp'
 
 $(document).ready(function(){
